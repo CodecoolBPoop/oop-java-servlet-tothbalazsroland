@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "simpleServlet", urlPatterns = {"/"}, loadOnStartup = 1)
+@WebServlet(name = "simpleServlet", urlPatterns = {"/anyad"}, loadOnStartup = 1)
 public class ServletWithAnnotations extends HttpServlet {
 
     @Override
@@ -25,6 +25,7 @@ public class ServletWithAnnotations extends HttpServlet {
                 "<ul>\n" +
                 "<li><b>First Name</b>: " + request.getParameter("first_name") + "\n" +
                 "<li><b>Last Name</b>: " + request.getParameter("last_name") + "\n" +
+                        "<li><b>Age</b>: " + request.getParameter("age") + "\n" +
                 "</ul>\n" +
                 "<div>Visit another servlet: <a href=\"/another\">Visit the other servlet</a></div>" +
                 "</body></html>"
