@@ -21,6 +21,7 @@ public class OrderableItItems {
         items.add(new Item("Speaking Parrot", 200));
         items.add(new Item("Barrel of good rum", 500));
         items.add(new Item("Barrel of cheap rum", 99));
+        items.add(new Item("Double barrel gun",400));
     }
 
 

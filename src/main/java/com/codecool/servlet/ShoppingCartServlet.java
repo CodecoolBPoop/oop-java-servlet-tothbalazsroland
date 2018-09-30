@@ -33,9 +33,9 @@ public class ShoppingCartServlet extends HttpServlet {
                         "</script>" +
                         "<link rel=\"stylesheet\" type=\"text/css\" href=\"/css/style.css\">"+
                         "</head>\n" +
-                        "<body>\n" +
+                        "<body background=\"/design/pirate.jpg\">\n" +
+                        "<div class=\"height40\"><a href=\"/webshop\"><button>Webshop</button></a></div>"+
                         tableBuffer.toString()+
-                        "<a href=\"/webshop\"><button>Webshop</button></a>"+
                         "</body></html>"
         );
     }
